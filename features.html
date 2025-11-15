@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Features — Intelligential</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="particles-container"></div>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand" onclick="location.href='./index.html'"><div class="logo">🎓</div><div><div style="font-weight:800">Intelligential</div></div></div>
+      <div class="nav-links" id="nav-links">
+        <button onclick="location.href='./index.html'">Home</button>
+        <button class="active" onclick="location.href='./features.html'">Features</button>
+        <button onclick="location.href='./about.html'">About</button>
+        <button onclick="location.href='./contact.html'">Contact</button>
+        <button onclick="location.href='./login.html'">Login</button>
+        <button onclick="toggleTheme()" class="btn-ghost">Toggle Theme</button>
+      </div>
+      <button id="hamburger-btn" class="hamburger">☰</button>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:120px">
+    <section class="section">
+      <h1 class="slide-in-left">Features</h1>
+      <p class="text-muted">Powerful tools designed to improve learning outcomes.</p>
+    </section>
+
+    <section class="section">
+      <div class="max-card">
+        <div class="card card-hover">
+          <h3 id="feature-1-title">Smart Study Tools</h3>
+          <p class="text-muted">AI summaries, flashcards and adaptive learning paths.</p>
+        </div>
+        <div class="card card-hover">
+          <h3 id="feature-2-title">Connect & Collaborate</h3>
+          <p class="text-muted">Join study groups and collaborate on projects.</p>
+        </div>
+        <div class="card card-hover">
+          <h3 id="feature-3-title">Track Your Progress</h3>
+          <p class="text-muted">Detailed analytics and progress tracking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin-bottom:18px">Admins</h2>
+      <div class="max-card">
+        <div class="card"><h3>Sadu Ayomide</h3><p class="text-muted">Founder & Lead Admin — strategy & community</p></div>
+        <div class="card"><h3>Dosumu Akorede</h3><p class="text-muted">Systems & Ops — infra & integrations</p></div>
+        <div class="card"><h3>Ogungbayibi Israel</h3><p class="text-muted">Academic Coordinator — materials & quality</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">© Intelligential</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

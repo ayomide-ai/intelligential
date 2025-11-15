@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign Up — Intelligential</title>
+  <link rel="stylesheet" href="styles.css"> <!-- your main styles -->
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner container">
+      <div class="brand" onclick="location.href='./index.html'">
+        <div class="logo">🎓</div>
+        <div style="font-weight:800;color:white">Intelligential</div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:120px;max-width:680px">
+    <div class="card">
+      <h2>Create account</h2>
+      <p class="text-muted">Join Intelligential and start learning. (Demo only — client-side storage)</p>
+
+      <form id="signup-form" onsubmit="signupDemo(event)">
+        <label class="text-muted">Full name</label>
+        <input name="name" required class="form-input" placeholder="Jane Doe" />
+
+        <label class="text-muted">Email</label>
+        <input name="email" type="email" required class="form-input" placeholder="you@example.com" />
+
+        <label class="text-muted">Password</label>
+        <input id="signup-password" name="password" type="password" required class="form-input" placeholder="At least 8 characters" />
+
+        <label class="text-muted">Confirm password</label>
+        <input name="confirm_password" type="password" required class="form-input" placeholder="Repeat password" />
+
+        <div style="margin-bottom:12px">
+          <small id="pw-feedback" class="text-muted">Password must be at least 8 characters, include upper & lower case and a number.</small>
+        </div>
+
+        <div style="display:flex;gap:12px;align-items:center">
+          <button class="cta" type="submit" style="background:var(--accent1);color:white">Create account</button>
+          <a href="login.html" class="btn-ghost" style="background:transparent">Already have an account?</a>
+        </div>
+      </form>
+
+      <hr style="margin:16px 0">
+      <div class="text-muted small">This demo stores accounts in your browser only. For production, use a server-based auth system.</div>
+    </div>
+  </main>
+
+  <script src="auth.js"></script>
+  <script>
+    // Attach live password feedback
+    document.addEventListener('DOMContentLoaded', () => {
+      const pw = document.getElementById('signup-password');
+      const fb = document.getElementById('pw-feedback');
+      if (pw && fb) bindPasswordStrength(pw, fb);
+    });
+  </script>
+</body>
+</html>

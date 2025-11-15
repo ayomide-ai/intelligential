@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Intelligential — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- particles -->
+  <div id="particles-container"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="nav-inner">
+      <div class="brand" onclick="location.href='./index.html'">
+        <div class="logo">🎓</div>
+        <div>
+          <div style="font-weight:800">Intelligential</div>
+        </div>
+      </div>
+
+      <div class="nav-links" id="nav-links">
+        <button class="active" onclick="location.href='./index.html'">Home</button>
+        <button onclick="location.href='./features.html'">Features</button>
+        <button onclick="location.href='./about.html'">About</button>
+        <button onclick="location.href='./contact.html'">Contact</button>
+        <button onclick="location.href='./login.html'">Login</button>
+        <button onclick="toggleTheme()" class="btn-ghost">Toggle Theme</button>
+      </div>
+
+      <button id="hamburger-btn" class="hamburger" aria-label="menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <h1 class="slide-in-left">Your Academic Journey Starts Here</h1>
+        <p class="slide-in-right">Discover, learn and achieve — Intelligential gives you the tools and community for real academic growth.</p>
+        <div class="flex">
+          <a class="cta" href="./features.html">Get Started Today</a>
+          <a class="btn-ghost" href="./courses.html">Browse Courses</a>
+        </div>
+      </div>
+
+      <div style="width:420px;text-align:center">
+        <div class="card fade-in-up">
+          <h3 style="color:white;margin:0 0 6px">50K+ Active Students</h3>
+          <p class="text-muted">Join a thriving community of learners</p>
+        </div>
+        <div class="card" style="margin-top:14px">
+          <h4 style="margin:0 0 6px">Smart Study Tools</h4>
+          <p class="text-muted">Flashcards, AI summaries, structured lessons.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- floating emojis -->
+    <div class="float-emoji float-1">📚</div>
+    <div class="float-emoji float-2">🎯</div>
+    <div class="float-emoji float-3">🚀</div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats container">
+    <div class="stat"><div class="num" id="stat-1">0</div><div class="text-muted">Active Students</div></div>
+    <div class="stat"><div class="num" id="stat-2">0</div><div class="text-muted">Success Rate</div></div>
+    <div class="stat"><div class="num" id="stat-3">0</div><div class="text-muted">Universities</div></div>
+    <div class="stat"><div class="num" id="stat-4">0</div><div class="text-muted">Support</div></div>
+  </section>
+
+  <!-- FEATURES PREVIEW -->
+  <section class="section container">
+    <h2 style="text-align:center;margin-bottom:20px" class="gradient-text">Everything You Need to Succeed</h2>
+    <div class="max-card">
+      <div class="card">
+        <h3>Smart Study Tools</h3>
+        <p class="text-muted">Adaptive flashcards, summaries and personalized paths.</p>
+      </div>
+      <div class="card">
+        <h3>Community</h3>
+        <p class="text-muted">Study groups, mentorship and discussions.</p>
+      </div>
+      <div class="card">
+        <h3>Track Progress</h3>
+        <p class="text-muted">Analytics and progress reports to keep you motivated.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © Intelligential — Empowering students worldwide • <span class="text-muted">hello@yourdomain.com</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

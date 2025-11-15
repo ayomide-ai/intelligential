@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses – Intelligential</title>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Main Script -->
+    <script defer src="script.js"></script>
+</head>
+
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-200">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/40 dark:bg-black/40 backdrop-blur-xl shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+        <h1 class="text-2xl font-bold text-purple-600 dark:text-purple-400">Intelligential</h1>
+
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="index.html" class="hover:text-purple-500 transition">Home</a>
+            <a href="about.html" class="hover:text-purple-500 transition">About</a>
+            <a href="features.html" class="hover:text-purple-500 transition">Features</a>
+            <a href="admins.html" class="hover:text-purple-500 transition">Admins</a>
+            <a href="course.html" class="text-purple-600 dark:text-purple-400 font-semibold">Courses</a>
+            <a href="contact.html" class="hover:text-purple-500 transition">Contact</a>
+            <a href="login.html" class="hover:text-purple-500 transition">Login</a>
+        </div>
+
+        <!-- Dark Mode Button -->
+        <button onclick="toggleDarkMode()" class="ml-6 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-all">
+            🌙
+        </button>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="mt-28 text-center py-20 bg-gradient-to-br from-purple-600 to-blue-600 text-white">
+    <h1 class="text-5xl font-extrabold mb-4 animate-fade-up">Available Courses</h1>
+    <p class="text-lg opacity-90 animate-fade-up delay-200">
+        Explore our structured learning tracks designed to help you excel academically.
+    </p>
+</section>
+
+<!-- COURSES GRID -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold mb-10 text-center gradient-text">Our Learning Categories</h2>
+
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Course Card -->
+        <div class="course-card">
+            <h3 class="course-title">Mathematics</h3>
+            <p class="course-desc">Algebra, Geometry, Calculus, Statistics & exam preparation materials.</p>
+            <a href="#" class="course-btn">Explore</a>
+        </div>
+
+        <div class="course-card">
+            <h3 class="course-title">English Language</h3>
+            <p class="course-desc">Grammar, essays, comprehension, and exam-oriented resources.</p>
+            <a href="#" class="course-btn">Explore</a>
+        </div>
+
+        <div class="course-card">
+            <h3 class="course-title">Sciences</h3>
+            <p class="course-desc">Physics, Chemistry, Biology videos, diagrams & practicals.</p>
+            <a href="#" class="course-btn">Explore</a>
+        </div>
+
+        <div class="course-card">
+            <h3 class="course-title">Technology</h3>
+            <p class="course-desc">Coding, digital literacy, AI basics & computer operations.</p>
+            <a href="#" class="course-btn">Explore</a>
+        </div>
+
+        <div class="course-card">
+            <h3 class="course-title">Business Studies</h3>
+            <p class="course-desc">Economics, accounting, marketing, and entrepreneurship guides.</p>
+            <a href="#" class="course-btn">Explore</a>
+        </div>
+
+        <div class="course-card">
+            <h3 class="course-title">Exam Prep</h3>
+            <p class="course-desc">Past questions, CBT practice, and WAEC/NECO/JAMB premium materials.</p>
+            <a href="#" class="course-btn">Explore</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <p class="mb-4">© 2025 Intelligential. All rights reserved.</p>
+        <p class="opacity-60">Empowering students with smart learning tools.</p>
+    </div>
+</footer>
+
+</body>
+</html>

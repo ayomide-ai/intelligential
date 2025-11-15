@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>About — Intelligential</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <div id="particles-container"></div>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand" onclick="location.href='./index.html'"><div class="logo">🎓</div><div><div style="font-weight:800">Intelligential</div></div></div>
+      <div class="nav-links" id="nav-links">
+        <button onclick="location.href='./index.html'">Home</button>
+        <button onclick="location.href='./features.html'">Features</button>
+        <button class="active" onclick="location.href='./about.html'">About</button>
+        <button onclick="location.href='./contact.html'">Contact</button>
+        <button onclick="location.href='./login.html'">Login</button>
+        <button onclick="toggleTheme()" class="btn-ghost">Toggle Theme</button>
+      </div>
+      <button id="hamburger-btn" class="hamburger">☰</button>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:120px">
+    <section class="section">
+      <div style="text-align:center;margin-bottom:26px">
+        <h1 class="slide-in-left">About Intelligential</h1>
+        <p class="text-muted">Empowering students worldwide with smart learning tools and community support.</p>
+      </div>
+
+      <div class="max-card">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p class="text-muted">To make education accessible, effective, and enjoyable for all students.</p>
+        </div>
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p class="text-muted">A global community of learners achieving their full potential.</p>
+        </div>
+        <div class="card">
+          <h3>Core Values</h3>
+          <p class="text-muted">Excellence • Innovation • Collaboration • Empathy</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">© Intelligential</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
