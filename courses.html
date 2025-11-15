@@ -22,15 +22,14 @@
     <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
         <h1 class="text-2xl font-bold text-purple-600 dark:text-purple-400">Intelligential</h1>
 
-        <div class="hidden md:flex space-x-8 font-medium">
-            <a href="index.html" class="hover:text-purple-500 transition">Home</a>
-            <a href="about.html" class="hover:text-purple-500 transition">About</a>
-            <a href="features.html" class="hover:text-purple-500 transition">Features</a>
-            <a href="admins.html" class="hover:text-purple-500 transition">Admins</a>
-            <a href="course.html" class="text-purple-600 dark:text-purple-400 font-semibold">Courses</a>
-            <a href="contact.html" class="hover:text-purple-500 transition">Contact</a>
-            <a href="login.html" class="hover:text-purple-500 transition">Login</a>
-        </div>
+        <div class="nav-links" id="nav-links">
+        <button class="active" onclick="location.href='./home.html'">Home</button>
+        <button onclick="location.href='./features.html'">Features</button>
+        <button onclick="location.href='./about.html'">About</button>
+        <button onclick="location.href='./contact.html'">Contact</button>
+        <button onclick="location.href='./index.html'">Login</button>
+        <button onclick="toggleTheme()" class="btn-ghost">Toggle Theme</button>
+      </div>
 
         <!-- Dark Mode Button -->
         <button onclick="toggleDarkMode()" class="ml-6 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-all">
@@ -103,3 +102,4 @@
 
 </body>
 </html>
+
